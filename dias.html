@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoGo — Экологиялық қосымша</title>
+    <link rel="stylesheet" href="dias.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">🌱 EcoGo</div>
+
+        <nav>
+            <a href="#home">Басты бет</a>
+            <a href="#tasks">Тапсырмалар</a>
+            <a href="#about">Біз туралы</a>
+        </nav>
+
+        <button class="profile-btn">👤 Профиль</button>
+    </header>
+
+    <main>
+
+        <!-- Басты бет -->
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <span class="badge">🌍 Табиғатты бірге қорғайық</span>
+
+                <h1>
+                    Әдетіңді өзгерт —
+                    <span>планетаны өзгерт!</span>
+                </h1>
+
+                <p>
+                    EcoGo — экологиялық әдеттерді қалыптастыруға,
+                    тапсырмалар орындауға және табиғатты қорғауға
+                    көмектесетін мобильді қосымша.
+                </p>
+
+                <button class="main-btn" onclick="scrollToTasks()">
+                    Тапсырмаларды бастау →
+                </button>
+            </div>
+
+            <div class="hero-card">
+                <div class="circle">🌱</div>
+                <h3>Сіздің нәтижелеріңіз</h3>
+
+                <div class="stat">
+                    <span>Экобалл</span>
+                    <strong id="points">120</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+
+                <p>Келесі деңгейге дейін: 80 балл</p>
+            </div>
+        </section>
+
+        <!-- Статистика -->
+        <section class="stats">
+            <div class="stat-box">
+                <span>♻️</span>
+                <h3>24</h3>
+                <p>Тапсырма орындалды</p>
+            </div>
+
+            <div class="stat-box">
+                <span>🌳</span>
+                <h3>12</h3>
+                <p>Экологиялық әрекет</p>
+            </div>
+
+            <div class="stat-box">
+                <span>🏆</span>
+                <h3>5</h3>
+                <p>Жетістік</p>
+            </div>
+        </section>
+
+        <!-- Тапсырмалар -->
+        <section class="tasks-section" id="tasks">
+            <div class="section-title">
+                <span class="badge">Бүгінгі тапсырмалар</span>
+                <h2>Табиғатқа пайдалы әрекет жаса 🌿</h2>
+                <p>Тапсырманы орындап, экобалл жинаңыз.</p>
+            </div>
+
+            <div class="tasks">
+
+                <div class="task">
+                    <div class="task-icon">♻️</div>
+
+                    <div class="task-info">
+                        <h3>Қоқысты сұрыпта</h3>
+                        <p>Пластик, қағаз және шыныны бөлек жина.</p>
+                    </div>
+
+                    <button onclick="completeTask(this, 20)">
+                        +20
+                    </button>
+                </div>
+
+                <div class="task">
+                    <div class="task-icon">🚶</div>
+
+                    <div class="task-info">
+                        <h3>Жаяу жүр</h3>
+                        <p>Көлік орнына жаяу немесе велосипедпен жүр.</p>
+                    </div>
+
+                    <button onclick="completeTask(this, 15)">
+                        +15
+                    </button>
+                </div>
+
+                <div class="task">
+                    <div class="task-icon">💧</div>
+
+                    <div class="task-info">
+                        <h3>Суды үнемде</h3>
+                        <p>Суды қажетсіз ағызбай, ресурсты үнемде.</p>
+                    </div>
+
+                    <button onclick="completeTask(this, 10)">
+                        +10
+                    </button>
+                </div>
+
+                <div class="task">
+                    <div class="task-icon">🌳</div>
+
+                    <div class="task-info">
+                        <h3>Табиғатты қорға</h3>
+                        <p>Саябақтағы немесе ауладағы қоқысты жина.</p>
+                    </div>
+
+                    <button onclick="completeTask(this, 25)">
+                        +25
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Біз туралы -->
+        <section class="about" id="about">
+            <div>
+                <span class="badge">🌱 EcoGo</span>
+                <h2>Неге EcoGo?</h2>
+                <p>
+                    Біз адамдарға күнделікті қарапайым әрекеттер
+                    арқылы қоршаған ортаны қорғауға мүмкіндік береміз.
+                </p>
+            </div>
+
+            <div class="about-cards">
+                <div>🌍 <strong>Экология</strong><br>Табиғатты қорғау</div>
+                <div>🏆 <strong>Мотивация</strong><br>Ұпай және жетістік</div>
+                <div>👥 <strong>Қоғам</strong><br>Достармен жарысу</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 EcoGo. Табиғатты бірге қорғайық 🌍</p>
+    </footer>
+
+    <script src="dias.js"></script>
+</body>
+</html>
